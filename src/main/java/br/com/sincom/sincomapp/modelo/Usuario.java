@@ -13,7 +13,7 @@ import javax.persistence.SequenceGenerator;
 
 /**
  *
- * @author joaon
+ * @author Marcelo Fernandes
  */
 @Entity
 public class Usuario {
@@ -23,7 +23,7 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "usuario_seq")
     private Long id;
     private String nome;
-
+   
     public Long getId() {
         return id;
     }
