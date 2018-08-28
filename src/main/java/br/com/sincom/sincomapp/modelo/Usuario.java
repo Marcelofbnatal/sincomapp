@@ -23,7 +23,16 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "usuario_seq")
     private Long id;
     private String nome;
-   
+    private String senha;
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+    
     public Long getId() {
         return id;
     }

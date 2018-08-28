@@ -14,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
- * @author joaon
+ * @author Marcelo Fernandes
  */
 @Controller
 @RequestMapping(path = "usuarios")
