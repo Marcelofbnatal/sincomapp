@@ -5,16 +5,16 @@
  */
 package br.com.sincom.sinconapp.repositorio;
 
+import br.com.sincom.sinconapp.modelo.Reserva;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.sincom.sinconapp.modelo.Usuario;
 
 /**
  *
  * @author Marcelo Fernandes
  */
 @Repository
-public interface ReservaRepositorio extends JpaRepository<Usuario, Long>{
+public interface ReservaRepositorio extends JpaRepository<Reserva, Long>{
     
 }

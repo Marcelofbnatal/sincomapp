@@ -20,14 +20,15 @@ import javax.persistence.SequenceGenerator;
  */
 @Entity
 public class Condominio implements Serializable {
-     @Id
+
+    @Id
     @SequenceGenerator(name = "condominio_seq", sequenceName = "condominio_seq",
             allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "condominio_seq")
     private int id;
     private String nome;
     private String endereco;
-    
+
     @OneToMany(mappedBy = "condominio")
     private List<Espaco> espacos;
     @OneToMany(mappedBy = "condominio")
