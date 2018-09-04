@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.sincom.sincomapp.modelo;
+package br.com.sincom.sinconapp.modelo;
 
+import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +20,7 @@ import javax.persistence.SequenceGenerator;
  * @author Marcelo Fernandes
  */
 @Entity
-public class Lote {
+public class Lote implements Serializable {
     @Id
     @SequenceGenerator(name = "lote_seq", sequenceName = "lote_seq",
             allocationSize = 1)

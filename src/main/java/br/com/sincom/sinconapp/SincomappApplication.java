@@ -1,4 +1,4 @@
-package br.com.sincom.sincomapp;
+package br.com.sincom.sinconapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

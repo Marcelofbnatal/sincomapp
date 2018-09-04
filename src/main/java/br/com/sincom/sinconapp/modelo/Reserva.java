@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.sincom.sincomapp.modelo;
+package br.com.sincom.sinconapp.modelo;
 
+import java.io.Serializable;
 import java.util.Calendar;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,7 +21,7 @@ import javax.persistence.TemporalType;
  * @author Marcelo Fernandes
  */
 @Entity
-public class Reserva {
+public class Reserva implements Serializable {
   @Id
     @SequenceGenerator(name = "reserva_seq", sequenceName = "reserva_seq",
             allocationSize = 1)
@@ -32,6 +33,25 @@ public class Reserva {
     private Espaco espaco;
     @Temporal(TemporalType.TIMESTAMP)
     private Calendar dataReserva;
+    private String Local;
+    private String Horario;
+
+    public String getLocal() {
+        return Local;
+    }
+
+    public void setLocal(String Local) {
+        this.Local = Local;
+    }
+
+    public String getHorario() {
+        return Horario;
+    }
+
+    public void setHorario(String Horario) {
+        this.Horario = Horario;
+    }
+    
 
     public int getId() {
         return id;

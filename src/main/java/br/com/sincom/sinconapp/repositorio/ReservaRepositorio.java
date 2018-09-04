@@ -3,17 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.sincom.sincomapp.repositorio;
+package br.com.sincom.sinconapp.repositorio;
 
-import br.com.sincom.sincomapp.modelo.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import br.com.sincom.sinconapp.modelo.Usuario;
+
 /**
  *
- * @author joaon
+ * @author Marcelo Fernandes
  */
 @Repository
-public interface UsuarioRepositorio extends JpaRepository<Usuario, Long>{
+public interface ReservaRepositorio extends JpaRepository<Usuario, Long>{
     
 }
